@@ -5,11 +5,13 @@ import About from './pages/About'
 import NoMatch from './pages/NoMatch'
 import { Route, Switch } from 'react-router-dom'
 import FlashCards from './pages/Flashcards'
+import Navbar from './components/Navbar'
 
 class App extends React.Component {
     render() {
         return(
             <Fragment>
+                    <Navbar/>
                     <Container>
                         <Switch>
                             <Route exact path='/' component={Home} />
